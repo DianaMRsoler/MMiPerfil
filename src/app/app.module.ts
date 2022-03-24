@@ -9,13 +9,15 @@ import { PerfilComponent } from './Pages/perfil/perfil.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HttpClientModule } from '@angular/common/http';
+import { ExitoComponent } from './Pages/exito/exito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabeceraComponent,
     MenuComponent,
-    PerfilComponent
+    PerfilComponent,
+    ExitoComponent
   ],
   imports: [
     BrowserModule,

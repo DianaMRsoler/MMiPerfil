@@ -1,0 +1,28 @@
+.txtExito{
+    text-align: left;
+    font: normal normal normal 18px/21px DinR;
+    letter-spacing: 0.18px;
+    color: #FFFFFF;
+}
+
+.container{
+    background: #474749 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    width: 90%;
+    margin:auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.circulo{
+    background: #32BEA6;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.icono{
+    color: #FFFFFF;
+    padding-left: 4px;
+    padding-top: 3px;
+}
