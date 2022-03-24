@@ -1,0 +1,53 @@
+3.1
+
+divisores(num){
+    let numeros = [];
+
+    for(let i = 0; i < num; i++){
+  
+      if(num % i === 0 && i>1 && i != num){
+      numeros.push(i);
+      }
+    }
+
+    if(numeros.length == 0){
+ 	return "el " + num + " es primo";
+    }else{
+      return numeros;
+    }
+  }
+
+3.2 recetas
+
+calcReceta(harina:number,huevos:number,leche:number,azucar:number){
+    let flag =true;
+    let cantidad =0;
+
+    let ing: disponible = {
+      harina:1200,
+      huevos:5,
+      leche:200,
+      azucar:1200,
+    };
+
+    while(flag){
+      if(ing.harina >= harina && ing.huevos >= huevos && ing.leche >= leche && ing.azucar >= azucar){
+        ing.harina = (ing.harina - harina);
+        ing.huevos = (ing.huevos - huevos);
+        ing.leche = (ing.leche - leche);
+        ing.azucar = (ing.azucar - azucar);
+        cantidad++;
+      }else{
+        flag = false;
+      }
+    }
+    return cantidad;
+    
+  }
+
+interface disponible{
+  harina: number;
+  huevos: number;
+  leche: number;
+  azucar: number;
+}

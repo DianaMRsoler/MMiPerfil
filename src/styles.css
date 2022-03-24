@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: "DinB";
+    src: url(./assets/Fonts/DINBold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "DinR";
+    src: url(./assets/Fonts/DINRegular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoB";
+    src: url(./assets/Fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "RobotoR";
+    src: url(./assets/Fonts/Roboto-Regular.ttf) format("truetype");
+}

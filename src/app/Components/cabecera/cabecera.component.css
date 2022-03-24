@@ -1,0 +1,72 @@
+.contenedor{
+    background: #E4E0E8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.principal{
+    margin: auto;
+    padding: 20px 22px;
+}
+
+.ttl{
+    text-align: left;
+    font: normal normal bold 14px/24px DinB;
+    letter-spacing: 0.14px;
+    color: #632678;
+    margin-bottom: 3px;
+}
+
+.txtNombre{
+    font: normal normal normal 18px/24px DinB;
+    letter-spacing: 0.18px;
+    color: #474749;
+    opacity: 1;
+}
+
+.cntBtnPerfil{
+    background-color: #632678;
+    border-radius: 8px;
+    width: 104px;
+    height: 24px;
+    padding: 1px 20px 28px;
+}
+
+.btnPerfil{
+    border: none;
+    margin: auto;
+}
+
+.txtPerfil{
+    text-align: center;
+    font: normal normal bold 14px/24px DinB;
+    letter-spacing: 0.14px;
+    color: #FFFFFF;
+}
+
+.txtPerfil{
+    font: normal normal bold 14px/24px DinB;
+    letter-spacing: 0.14px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.iconPerfil{
+    padding-left: 10px;
+    align-self: center;
+}
+
+.cntInfo{
+    display: inline-block;
+    vertical-align: top;
+    /* margin-left: 11px; */
+    right: 3px;
+    position: fixed;
+
+}
+
+img.iconInfo {
+    float: right;
+    padding-top: 6px;
+}

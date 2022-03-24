@@ -1,0 +1,60 @@
+.contenedor{
+    margin-bottom: 15px;
+}
+
+.principal{
+    width: 94%;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 2px 2px 6px #00000029;
+    border-radius: 8px;
+}
+.cntIcon{
+    background: #632678 0% 0% no-repeat padding-box;
+    padding: 15px;
+    border-radius: 32px;
+    text-align: center;
+    margin: 20%;
+    display: flex;
+    max-width: 53px;
+    min-width: 53px;
+    justify-content: space-evenly;
+    min-width: 53px;
+    min-height: 53px;
+}
+
+.cntIcon img{
+    max-width: 22px;
+    max-height: 22px;
+}
+
+.txtIcon{
+    text-align: center;
+    font: normal normal normal 11px/19px DinR;
+    letter-spacing: 0.11px;
+    color: #000000;
+    opacity: 1;
+    margin: 2%;
+}
+
+.badgeIcon{
+    min-height: 15px;
+    min-width: 15px;
+    background: transparent;
+    color: #BC1656;
+    font-size: 51px;
+
+    margin-left: 42px;
+    padding: 0px;
+    position: absolute;
+    top: 123px;
+
+}
+
+.deshabilitar{
+    opacity: 0.3;
+}
+
+.noSelect{
+    background: #E4E0E8 0% 0% no-repeat padding-box !important;
+}

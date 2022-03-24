@@ -1,0 +1,159 @@
+<div class="container">
+    <app-cabecera></app-cabecera>
+    <app-menu (cambio)="getCambio($event)"></app-menu>
+    <div id="perfil" [ngStyle]="{'display':perfil}">
+        <div class="principal">
+            <p class="txtCont">{{txt}}</p>
+        </div>
+    
+        <div class="principal" id="dPersonales">
+            <p class="txtTitulo">Información general</p>
+    
+            <div class="row formulario">
+                <div class="col-12 contInput">
+                    <label class="txtInput">Nombres</label>
+                    <input class="inputs"  placeholder="" type="text" name="nombres" [(ngModel)]="dPersonales.name" >
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Apellidos</label>
+                    <input class="inputs"  placeholder="" type="text" name="apellidos" [(ngModel)]="dPersonales.apellidos" >
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Documento de identidad</label>
+                    <input class="inputs"  placeholder="" type="text" name="tIdentidad" [(ngModel)]="dPersonales.tIdentidad" >
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Número de documento de identidad</label>
+                    <input class="inputs"  placeholder="" type="text" name="documento" [(ngModel)]="dPersonales.documento" >
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">E-mail</label>
+                    <input class="inputs"  placeholder="" type="email" name="correo" [(ngModel)]="dPersonales.email" >
+                </div>
+    
+                <div class="col-12 contInput">
+                    <label class="txtInput">Celular</label>
+                    <div class="row">
+                        <div class="col-5 col-md-2">
+                            <div class="">
+                                <img class="bandera" src="./assets/Images/colombia.png" alt="">
+                            <select name='indicativo' class='inputS inputs' id='indicativo' [(ngModel)]="dPersonales.indicativo" >
+                                <option class=" form-control"  value="1" selected> +57</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-10 mx-0 px-0">
+                            <input class="inputs" style="width: 93%;"  placeholder="" type="number" name="celular" [(ngModel)]="dPersonales.phone" >
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 contInput">
+                    <label class="txtInput">Fecha de nacimiento</label>
+                    <input class="inputs iDate"  placeholder="" type="date" name="fNacimiento" [(ngModel)]="dPersonales.fNacimiento" >
+                    <img class="iconCalendario" src="./assets/Images/calendar.png" alt="">
+                </div>
+    
+                <div class="col-12 contInput">
+                    <label class="txtInput">Genero</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btnInput">Hombre</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btnInput">Mujer</button>
+                        </div>
+                    </div>
+                </div>      
+            <button class="btnG1" (click)="editar()" id="btnGuardar">{{btn}}</button> 
+            </div>
+        </div>
+    
+        <div class="principal" id="iFinanciera">
+            <p class="txtTitulo">Información financiera</p>
+    
+            <div class="row formulario">
+                <div class="col-12 contInput">
+                    <label class="txtInput mb-2">Ocupación</label>
+                    <div class="cntRadios">
+                        <input class="che"  type="checkbox" name="estudiante" id="estudiante">
+                        <label class="lblOcupacion check1" for="estudiante">Estudiante</label>
+                    </div>
+                    <div class="cntRadios">
+                        <input class="che"  type="checkbox" name="empleado" id="empleado">
+                        <label class="lblOcupacion check1" for="empleado">Empleado</label>
+                    </div>
+                    <div class="cntRadios">
+                        <input class="che"  type="checkbox" name="independiente" id="independiente">
+                        <label class="lblOcupacion check1" for="independiente">Independiente</label>
+                    </div>
+                    <div class="cntRadios">
+                        <input class="che"  type="checkbox" name="pensionado" id="pensionado">
+                        <label class="lblOcupacion check1" for="pensionado">Pensionado</label>
+                    </div>
+                    <div class="cntRadios">
+                        <input class="che"  type="checkbox" name="otro" id="otro">
+                        <label class="lblOcupacion check1" for="otro">Otro</label>
+                    </div>
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Nivel de educación</label>
+                    <div class="contSelect">
+                        <select name='educacion' class='inputs form-control' id='educacion' [(ngModel)]="iFinanciera.educacion" >
+                            <option class="inputs form-control"  value="1" selected> +57</option>
+                        </select>
+                        <span class="arrows material-icons">expand_more</span>
+                    </div>
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Actividad laboral</label>
+                    <div class="contSelect">
+                        <select name='aLaboral' class='inputs form-control' id='aLaboral' [(ngModel)]="iFinanciera.aLaboral" >
+                            <option class="inputs form-control"  value="1" selected> +57</option>
+                        </select>
+                        <span class="arrows material-icons">expand_more</span>
+                    </div>
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Ingresos promedio mensuales</label>
+                    <div class="contSelect">
+                        <select name='ingresos' class='inputs form-control' id='ingresos' [(ngModel)]="iFinanciera.ingresos" >
+                            <option class="inputs form-control"  value="1" selected> +57</option>
+                        </select>
+                        <span class="arrows material-icons">expand_more</span>
+                    </div>
+                </div>
+                <div class="col-12 contInput">
+                    <label class="txtInput">Gastos promedio mensuales</label>
+                    <div class="contSelect">
+                        <select name='gastos' class='inputs form-control' id='gastos' [(ngModel)]="iFinanciera.gastos" >
+                            <option class="inputs form-control"  value="1" selected> +57</option>
+                        </select>
+                        <span class="arrows material-icons">expand_more</span>
+                    </div>
+                </div>     
+            <button class="btnG1" (click)="editarI()" id="editarI">Editar</button> 
+            </div>
+        </div>
+    </div>
+    <div id="notificaciones" [ngStyle]="{'display':notificaciones}">
+        <div class="principal">
+            <p class="txtCont">Configuración de notificaciones</p>
+            <p class="txtSub">Configura las notificaciones comerciales que te gustaría recibir de mi Datacrédito</p>
+            <div class="row">
+                <div class="col-10">
+                    <p class="txtNoti">SMS</p>
+                    <p class="txtNoti">Emails</p>
+                    <p class="txtNoti">Notificaciones push</p>
+                    <p class="txtNoti">Pop-ups</p>
+                </div>
+                <div class="col-2">
+                    <mat-slide-toggle class="slNoti"></mat-slide-toggle>
+                    <mat-slide-toggle class="slNoti"></mat-slide-toggle>
+                    <mat-slide-toggle class="slNoti"></mat-slide-toggle>
+                    <mat-slide-toggle class="slNoti"></mat-slide-toggle>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
